@@ -1,8 +1,14 @@
 ---
+- name: Check File
+  hosts: server
+  become: true
 
-
+  tasks:
+    - name: Test Ping
+      ansible.builtin.ping:
 
 
 
 
 ...
+
